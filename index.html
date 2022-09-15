@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>A&M COMPANY</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+
+        <form class="search-after" id="search">
+            <input id="inp1" type="Search" placeholder="SEARCH">
+            <button onclick="but1()"><img  class="but1" src="images/search2.png" alt="search"></button>
+        </form>
+        <nav class="man">
+            <a href="#"><span class="icon"><i class="fas fa-flask"></i></span> REWARDS</a>
+            <a href="pages/login.html"><span class="icon"><i class="fas fa-user"></i></span> LOGIN</a>
+            <a onclick="carticon()" id="cart-icon" class="cart-btn2" href="#"><span class="icon"><i class="fas fa-shopping-cart"></i></span> CART <span id="new" class="none">new</span> </a>
+        </nav>
+        <nav class="options">
+            <a href="#"><span class="icon"><i class="fas fa-flask"></i></span>REWARDS</a>
+            <a href="pages/login.html"><span class="icon"><i class="fas fa-user"></i></span>LOGIN</a>
+            <a href="#"><span class="icon"><i class="fas fa-shopping-cart"></i></span>CART</a>
+
+        </nav>
+
+        <nav class="more">
+            <nav class="add-cart"><i class="fas fa-shopping-cart"></i><span id="new3" class="none"></span></nav>
+
+            <input class="checkbox" type="checkbox" id="check">
+            <label for="check">
+            <i class="fa-solid fa-bars" id="btn"></i>
+            <i class="fa-solid fa-times" id="cancel"></i>
+    
+        </label>
+            <div class="sidebar">
+                <header>My App</header>
+                <ul>
+                    <li><a href="#sections"><i class="fa-sharp fa-solid fa-house-chimney"></i>HOME</a></li>
+                    <li><a href="#"><i class="fas fa-flask"></i>REWARDS</a></li>
+                    <li><a class="cart-btn2" href="#"><i class="fas fa-shopping-cart"></i>CART<span id="new2" class="none">new </span></a></li>
+                    <li><a href="pages/login.html"><i class="fas fa-user"></i>LOGIN</a></li>
+                    <li><a href="#"><i class="fa-solid fa-address-card"></i>ABOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+    </header>
+    <div id="error" class="error">
+        <p id="p1p"></p>
+    </div>
+
+
+    <section id="sections" class="main">
+
+        <div>
+            <h3>A NEW YEAR OF SCINCE DISCOVERY AWAITS</span>
+            </h3>
+            <h2>Back To School <br> Back To Science</h2>
+            <a class="but-main" href="#">SHOP SCIENCE SUPPLISE</a>
+        </div>
+    </section>
+
+    <!-- cart
+    <div id="cartt" class="none">
+        <section class="section22" id="section">
+
+            <div id="your-cart" class="none">
+
+                <div class="container2">
+                    <div class="content">
+
+                        <div class="cardd">
+                            <div class="card-content">
+                                <img src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/images/stencil/640x640/products/11834/17345/HOME-LST__54817.1573683396.jpg" alt="">
+                                <h2>Home LED Microscope</h2>
+                                <p>$264.95</p>
+                                <div class="buts-cards">
+                                    <a onclick="add()" id="add-cart-btn" class="add">Buy</a>
+                                    <span>value : 1</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        </div> -->
+
+
+
+
+
+
+
+    <!--...........start cards........-->
+
+    <section class="section2" id="section2">
+        <div id="sections" class="div-title">
+            <h2 class="title">Popular Science Tools & Products</h2><br>
+            <span class="underline">.</span>
+
+        </div>
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <img src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/images/stencil/640x640/products/11834/17345/HOME-LST__54817.1573683396.jpg" alt="">
+                        <h2>Home LED Microscope</h2>
+                        <p>$264.95</p>
+                        <div class="buts-cards">
+                            <a onclick="add()" id="add-cart-btn" class="add">ADD TO CART</a>
+                            <a class="quick">QUICK VIEW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <img src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/images/stencil/640x640/products/11834/17345/HOME-LST__54817.1573683396.jpg" alt="">
+                        <h2>Home LED Microscope</h2>
+                        <p>$264.95</p>
+                        <div class="buts-cards">
+                            <a onclick="add()" class="add">ADD TO CART</a>
+                            <a class="quick">QUICK VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <img src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/images/stencil/640x640/products/11834/17345/HOME-LST__54817.1573683396.jpg" alt="">
+                        <h2>Home LED Microscope</h2>
+                        <p>$264.95</p>
+                        <div class="buts-cards">
+                            <a onclick="add()" class="add">ADD TO CART</a>
+                            <a class="quick">QUICK VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <img src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/images/stencil/640x640/products/11834/17345/HOME-LST__54817.1573683396.jpg" alt="">
+                        <h2>Home LED Microscope</h2>
+                        <p>$264.95</p>
+                        <div class="buts-cards">
+                            <a onclick="add()" class="add">ADD TO CART</a>
+                            <a class="quick">QUICK VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <img src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/images/stencil/640x640/products/11834/17345/HOME-LST__54817.1573683396.jpg" alt="">
+                        <h2>Home LED Microscope</h2>
+                        <p>$264.95</p>
+                        <div class="buts-cards">
+                            <a onclick="add()" class="add">ADD TO CART</a>
+                            <a class="quick">QUICK VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <img src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/images/stencil/640x640/products/11834/17345/HOME-LST__54817.1573683396.jpg" alt="">
+                        <h2>Home LED Microscope</h2>
+                        <p>$264.95</p>
+                        <div class="buts-cards">
+                            <a onclick="add()" class="add">ADD TO CART</a>
+                            <a class="quick">QUICK VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <img src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/images/stencil/640x640/products/11834/17345/HOME-LST__54817.1573683396.jpg" alt="">
+                        <h2>Home LED Microscope</h2>
+                        <p>$264.95</p>
+                        <div class="buts-cards">
+                            <a onclick="add()" class="add">ADD TO CART</a>
+                            <a class="quick">QUICK VIEW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <img src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/images/stencil/640x640/products/11834/17345/HOME-LST__54817.1573683396.jpg" alt="">
+                        <h2>Home LED Microscope</h2>
+                        <p>$264.95</p>
+                        <div class="buts-cards">
+                            <a onclick="add()" class="add">ADD TO CART</a>
+                            <a class="quick">QUICK VIEW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <img src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/images/stencil/640x640/products/11834/17345/HOME-LST__54817.1573683396.jpg" alt="">
+                        <h2>Home LED Microscope</h2>
+                        <p>$264.95</p>
+                        <div class="buts-cards">
+                            <a onclick="add()" class="add">ADD TO CART</a>
+                            <a class="quick">QUICK VIEW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+    </section>
+
+    <section class="section3" id="section3">
+        <div class="content2">
+
+            <img src="images/student.jpg" alt="student">
+            <div class="text">
+                <h3>SCIENCE UNLOCKED </h3>
+                <h2>Homeschool Science Curriculum and Teaching Tools Simplified</h2>
+                <p>Science Unlocked makes it easy to connect every student’s individual learning path with the tools and resources you need to inspire a lifelong love of science. From lesson planning to resource gathering, we’ve unlocked the formula for
+                    science education success at every age.</p>
+                <a href="#">DISCOVER SCIENCE UNLOCKED</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="title" class="title2">
+        <h1 class="h11h">Shop by Subject</h1>
+    </div>
+    <section class="section4" id="section44">
+
+        <div>
+            <i class="fa-solid fa-bacterium"></i>
+            <h2>BIOLOGY</h2>
+        </div>
+        <div>
+            <i class="fa-sharp fa-solid fa-flask-vial"></i>
+            <h2>CHEMISTRY</h2>
+        </div>
+        <div>
+            <i class="fa-sharp fa-solid fa-earth-americas"></i>
+            <h2> EARTH SCIENCE
+            </h2>
+        </div>
+        <div>
+            <i class="fa-solid fa-atom"></i>
+            <h2>PHYSICS & ENGINEERING</h2>
+        </div>
+    </section>
+    <div id="titlee2" class="title3">
+        <h2>Knowledge, Resources & Inspiration</h2>
+
+    </div>
+    <div id="title" class="line-title"><span>.</span></div>
+
+    <section class="section5" id="section5">
+
+
+        <div class="card-after1">
+
+            <h3>Science <br> Projects
+            </h3>
+
+            <div><a href="#">EXPLORE NOW</a></div>
+
+        </div>
+        <div class="card-after2">
+            <h3>Teaching <br> Resources
+            </h3>
+            <a href="#">EXPLORE NOW</a>
+        </div>
+        <div class="card-after3">
+            <h3>Curriculum <br> Resources
+            </h3>
+            <a href="#">EXPLORE NOW</a>
+        </div>
+    </section>
+
+    <div id="titlee3" class="title3">
+        <h2>MORE</h2>
+
+    </div>
+    <div id="title2" class="line-title"><span>.</span></div>
+
+    <section class="section6" id="section6">
+        <div class="div-card1-after">
+            <span><i class="fa-sharp fa-solid fa-flask"></i></span>
+            <h2>Science Kits</h2>
+            <p>Discover our full lineup of easy to use science kits. From one-stop boxes for easy experimenting to curriculum-specific supplies for lesson planning simplicity.</p>
+            <a href="#">SHOP SCIENCE KITS</a>
+        </div>
+        <div class="div-card2-after">
+            <span><i class="fa-solid fa-microscope"></i></span>
+            <h2>Microscopes</h2>
+            <p>Take a closer look at our complete line of microscopes for every subject and application. Reveal the hidden worlds of wonder that exist beyond the reach .</p>
+            <a href="#">SHOP MICROSCOPES</a>
+        </div>
+    </section>
+
+    <section class="section7" id="section7">
+        <div>
+            <h3>YOUR ONE-STOP SCIENCE STORE</h3>
+            <h2>Astronomy to Zoology</h2>
+            <p>Our 2800+ products are designed to encourage learning, exploration, <br> and continued discovery, for all ages and learning levels.</p>
+            <a href="#">MORE ABOUT HST</a>
+        </div>
+
+    </section>
+
+    <section class="section8" id="section8">
+        <div>
+            <h3>SUBSCRIBE TODAY</h3>
+            <h1>Free Economy Shipping on Your First Order of $50+</h1>
+            <form action="">
+                <input type="email" placeholder="Enter Your Email">
+                <button>SUBSCRIBE</button>
+            </form>
+
+        </div>
+    </section>
+
+    <footer id="footer1" class="footer1">
+        <div class="content-all">
+            <div class="footer-content">
+                <div class="div-logo">
+                    <a href="#sections"><span><img class="logo" src="images/logo.png" alt="logo"></span></a>
+                    <span><h2>A&M COMPANY</h2></span></div>
+                <div>
+                    <p><span><i class="fa-solid fa-location-dot"></i></span> 665 Carbon St, Billings, MT 59102</p>
+                    <p><span><i class="fa-sharp fa-solid fa-envelope"></i></span> service@homesciencetools.com</p>
+                    <p><span><i class="fa-solid fa-phone-flip"></i></span> 406-256-0990 </p>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="footer-content">
+
+                <h3>HOW CAN WE HELP?</h3>
+                <div>
+                    <a href="">
+                        Customer Service</a>
+                    <a href="">
+                        Returns</a>
+                    <a href="">Shipping</a>
+                    <a href="">FAQs</a>
+                </div>
+                <div>
+                    <a href="">Purchase Orders</a>
+                    <a href="">Warranties</a>
+                    <a href="">Quick Order</a>
+                </div>
+
+            </div>
+
+            <div class="footer-content">
+                <div>
+
+                    <h3>MY ACCOUNT</h3>
+                    <a href="">Login / Register</a>
+                    <a href="">Account Settings</a>
+                    <a href="">My Order History</a>
+                    <a href="">My Wish Lists</a>
+                    <a href="">My Science Perks</a>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div>
+
+                    <h3>MORE</h3>
+                    <a href="">About Us</a>
+                    <a href="">Careers</a>
+                    <a href="">On Sale</a>
+                    <a href="">Reviews</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <footer class="footer2" id="footer2">
+        <h1>PAYPAL</h1>
+
+        <div class="footer-pay1">
+            <img class="mc" src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/content/images/mastercard-logo-footer.png" alt="Mastercard">
+            <img class="visa" src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/content/images/visa-logo-footer.png" alt="Visa">
+            <img class="amex" src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/content/images/americanexpress-logo-footer.png" alt="Amex">
+            <img class="discover" src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/content/images/discover-logo-footer.png" alt="Discover">
+        </div>
+        <div class="footer-pay2">
+            <img id="moneyback-logo-footer" src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/content/images/HOME_guaranteebadge_x2.png" alt="satisfaction badge">
+            <img src="https://cdn11.bigcommerce.com/s-ufhcuzfxw9/content/images/small-business-logo-footer.png" alt="small business badge" id="small-business-logo-footer">
+            <img id="trustwaveSealImage" src="https://sealserver.trustwave.com/seal_image.php?customerId=4730069cff184fdba7b99e1df1d47ac6&amp;size=105x54&amp;style=invert" border="0" style="cursor:pointer;" onclick="javascript:window.open('https://sealserver.trustwave.com/cert.php?customerId=4730069cff184fdba7b99e1df1d47ac6&amp;size=105x54&amp;style=invert', 'c_TW', 'location=no, toolbar=no, resizable=yes, scrollbars=yes, directories=no, status=no, width=615, height=720'); return false;"
+                oncontextmenu="javascript:alert('Copying Prohibited by Law - Trusted Commerce is a registered trademark of Sysnet Limited, part of the VikingCloud group.'); return false;" alt="This site is protected by Sysnet's Trusted Commerce program" title="This site is protected by Sysnet's Trusted Commerce program">
+            <img src="https://verify.authorize.net/anetseal/images/secure90x72.gif" width="90" height="72">
+        </div>
+    </footer>
+
+    <footer class="footer-end" id="footer3">
+        <div>
+            <h3>© 2022 HOME SCIENCE TOOLS</h3>
+            <h3>ALL RIGHTS RESERVED</h3>
+            <h3>TERMS & PRIVACY</h3>
+            <h3>ACCESSIBILITY STATEMENT</h3>
+        </div>
+    </footer>
+
+    <footer class="Powered" id="footer4">
+        <h2> Powered BY <span><a href="https://nt2uyruqis93y6cywcgg5g.on.drv.tw/my/admin.html" target="_blank">@ Karem Magdy</span></a>
+        </h2>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
